@@ -2,6 +2,7 @@ import React from "react";
 import { Tab, Menu, Icon } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 import WelcomePage from "./WelcomePage.js";
+import CharacterList from "./CharacterList.js";
 
 // TODO: Add missing tabs below
 
@@ -24,7 +25,7 @@ const panes = [
         </NavLink>
       </Menu.Item>
     ),
-    render: () => <Tab.Pane>TODO</Tab.Pane>
+    render: () => <Tab.Pane><CharacterList /></Tab.Pane>
   },
   { menuItem: (
       <Menu.Item key='locations'>
