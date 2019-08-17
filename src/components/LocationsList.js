@@ -14,11 +14,11 @@ export default function LocationsList(props) {
       .catch( err => {
         console.log(err);
       });
-  }, [props.match.params.path]);
+  }, [props.match.path]);
 
   return (
     <section className="location-list grid-view">
-      { locationList.forEach( location => {
+      { locationList.map( location => {
         return <LocationCard key={location.id} {...location} />
       })}
     </section>

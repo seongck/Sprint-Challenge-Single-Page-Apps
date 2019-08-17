@@ -8,7 +8,7 @@ import AppRouter from "./AppRouter";
 const panes = [
   { menuItem: (
       <Menu.Item key='home'>
-        <NavLink>
+        <NavLink to="/">
           <Icon name='home' />
           Home Page
         </NavLink>
@@ -18,7 +18,7 @@ const panes = [
   },
   { menuItem: (
       <Menu.Item key='characters'>
-        <NavLink>
+        <NavLink to="/characters">
           <Icon name='users' />
           Characters 
         </NavLink>
@@ -28,7 +28,7 @@ const panes = [
   },
   { menuItem: (
       <Menu.Item key='locations'>
-        <NavLink>
+        <NavLink to="/locations">
           <Icon name='map outline' />
           Locations
         </NavLink>
@@ -38,7 +38,7 @@ const panes = [
   },
   { menuItem: (
       <Menu.Item key='episodes'>
-        <NavLink>
+        <NavLink to="/episodes">
           <Icon name='video camera' />
           Episodes
         </NavLink>

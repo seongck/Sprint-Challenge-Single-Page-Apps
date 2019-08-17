@@ -17,11 +17,13 @@ export default function CharacterList(props) {
       .catch( err => {
         console.log(err);
       });
-  }, [props.match.params.path]);
+  }, [props.match.path]);
+
+  if(!characterList.length){ return <h2>Loading...</h2>};
 
   return (
     <section className="character-list grid-view">
-      { characterList.forEach( character => {
+      { characterList.map( character => {
         return <CharacterCard key={character.id} character={character} />
       })}
     </section>

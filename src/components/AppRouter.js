@@ -5,7 +5,7 @@ import CharacterList from "./CharacterList.js";
 import LocationsList from "./LocationsList.js";
 import EpisodeList from "./EpisodeList.js";
 
-export default function AppRouter() {
+export default function AppRouter(props) {
   return (
     <div>
       <Route 
