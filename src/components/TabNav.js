@@ -6,18 +6,46 @@ import WelcomePage from "./WelcomePage.js";
 // TODO: Add missing tabs below
 
 const panes = [
-  { menuItem: {key: 'home', icon: 'home', content: 'Home Page' },
-    render: () => <Tab.Pane><WelcomePage /></Tab.Pane>,
+  { menuItem: (
+      <Menu.Item key='home'>
+        <NavLink>
+          <Icon name='home' />
+          Home Page
+        </NavLink>
+      </Menu.Item>
+    ),
+    render: () => <Tab.Pane><WelcomePage /></Tab.Pane>
   },
-  { menuItem: {key: 'characters', icon: 'users', content: 'Characters' },
-    render: () => <Tab.Pane>Characters Content</Tab.Pane>,
+  { menuItem: (
+      <Menu.Item key='characters'>
+        <NavLink>
+          <Icon name='users' />
+          Characters 
+        </NavLink>
+      </Menu.Item>
+    ),
+    render: () => <Tab.Pane>TODO</Tab.Pane>
   },
-  { menuItem: {key: 'locations', icon: 'map outline', content: 'Locations' },
-    render: () => <Tab.Pane>Locations Content</Tab.Pane>,
+  { menuItem: (
+      <Menu.Item key='locations'>
+        <NavLink>
+          <Icon name='map outline' />
+          Locations
+        </NavLink>
+      </Menu.Item>
+    ),
+    render: () => <Tab.Pane>TODO</Tab.Pane>
   },
-  { menuItem: {key: 'episodes', icon: 'video camera', content: 'Episodes' },
-    render: () => <Tab.Pane>Episodes Content</Tab.Pane>,
-  },
+  { menuItem: (
+      <Menu.Item key='episodes'>
+        <NavLink>
+          <Icon name='video camera' />
+          Episodes
+        </NavLink>
+      </Menu.Item>
+    ),
+    render: () => <Tab.Pane>TODO</Tab.Pane>
+  }
 ];
 
 export default function TabNav() {
