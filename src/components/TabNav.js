@@ -1,12 +1,13 @@
 import React from "react";
 import { Tab, Menu, Icon } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
+import WelcomePage from "./WelcomePage.js";
 
 // TODO: Add missing tabs below
 
 const panes = [
   { menuItem: {key: 'home', icon: 'home', content: 'Home Page' },
-    render: () => <Tab.Pane>Home Content</Tab.Pane>,
+    render: () => <Tab.Pane><WelcomePage /></Tab.Pane>,
   },
   { menuItem: {key: 'characters', icon: 'users', content: 'Characters' },
     render: () => <Tab.Pane>Characters Content</Tab.Pane>,
